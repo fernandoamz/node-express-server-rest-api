@@ -1,21 +1,36 @@
-import 'dotenv/config';
-import cors from 'cors';
-import express from 'express';
+const compression   = require('compression')
+const express       = require('express')
+const app           = express()
+const router        = express.Router()
+const bodyParser    = require("body-parser")
 
-import routes from './routes';
+app.use(compression())
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({
+    extended: true
+}))
 
-const app = express();
-app.use(cors());
+app.disable('x-powered-by')
+app.use(function(req, res, next){
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    res.setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next()
+})
 
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+router.use(function(req, res, next){
+    console.log("[ API ] -> /" + req.method + ' -> ' + req.path)
+    next()
+})
 
-app.use((req, res, next) => {
-  next();
-});
+const system_health = require('./routes/systemHealth')(router);
 
-app.use('/systemHealth', routes.systemHealth);
+const port = process.env.PORT || 3000
+app.use("/api", router)
 
-app.listen(process.env.PORT, () =>
-  console.log(`Example app listening on port ${process.env.PORT}!`),
-);
+app.use("*", function(req, res){
+    res.status(404).json({status: 'ERROR', result: '404'})
+})
+
+app.listen(port, function(){
+  console.log('[ API ] -> Server Ready: ' + port)
+})
