@@ -1,8 +1,8 @@
+const app           = express()
+const bodyParser    = require("body-parser")
 const compression   = require('compression')
 const express       = require('express')
-const app           = express()
 const router        = express.Router()
-const bodyParser    = require("body-parser")
 
 app.use(compression())
 app.use(bodyParser.json())
