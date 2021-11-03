@@ -23,7 +23,8 @@ An easy way to get started with a Express server offering a REST API with Node.j
 ### GET Routes
 
 - visit http://localhost:3000
-  - /api/health!
+
+Here, I let you a dictionary with the most of the routes. you can take a look in order to see whats you could need.
  
 ![Screen Shot 2021-11-03 at 10 37 19 AM](https://user-images.githubusercontent.com/7818620/140103730-f7f9e341-27d2-466c-8923-d337d7501664.png)
 
@@ -42,14 +43,3 @@ An easy way to get started with a Express server offering a REST API with Node.j
 ![Screen Shot 2021-11-03 at 10 48 26 AM](https://user-images.githubusercontent.com/7818620/140105544-ecf3f682-2ca5-43c5-8627-82daea02099b.png)
 
 ![Screen Shot 2021-11-03 at 10 50 12 AM](https://user-images.githubusercontent.com/7818620/140106444-058276ca-8420-43dc-aef3-29987429e934.png)
-
-
-
-
-
-
-
-
-
-
-
