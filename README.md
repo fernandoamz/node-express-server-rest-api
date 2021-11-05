@@ -1,16 +1,18 @@
-# Simple Node with Express Server with REST API
+# Appwrite system health
 
-An easy way to get started with a Express server offering a REST API with Node.js with explanation about how to use Appwrite Health Service.
+This is an example about how to implement system health to monitor your appwrite app.
 
 ## Features
 
 - Express
 - REST API
+- Appwrite route
 
 ## Requirements
 
 - [node & npm](https://nodejs.org/en/)
 - [git](https://www.robinwieruch.de/git-essential-commands/)
+- Running appwrite on background
 
 ## Installation
 
