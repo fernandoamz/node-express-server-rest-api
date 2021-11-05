@@ -1,8 +1,10 @@
 ![sh6nhzqmhd8g05gcdf69](https://user-images.githubusercontent.com/7818620/140456625-181ad393-bb56-4f0e-97a1-371b82d84cad.jpeg)
 
-# Appwrite system health 👨‍⚕️ 👩‍⚕️
+# Appwrite System Health 👨‍⚕️ 👩‍⚕️
 
 This is an example about how to implement system health to monitor your appwrite app.
+
+more info: [Article on Dev.to](https://dev.to/fernandoamz/appwrites-health-service-3lh7)
 
 ## Features 🚀
 
@@ -47,3 +49,5 @@ Here, I let you a dictionary with the most of the routes. you can take a look in
 ![Screen Shot 2021-11-03 at 10 48 26 AM](https://user-images.githubusercontent.com/7818620/140105544-ecf3f682-2ca5-43c5-8627-82daea02099b.png)
 
 ![Screen Shot 2021-11-03 at 10 50 12 AM](https://user-images.githubusercontent.com/7818620/140106444-058276ca-8420-43dc-aef3-29987429e934.png)
+
+## All PRs with improvements are welcome
